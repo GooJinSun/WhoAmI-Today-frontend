@@ -10,3 +10,6 @@ export const LEARN_MORE_ABOUT_WHOAMI_TODAY_NOTION_URL =
 
 export const DEFAULT_REDIRECTION_PATH = '/friends';
 export const AFTER_SIGNUP_PATH = '/my';
+
+// FIXME: 추후 제대로 된 폼 url로 변경 (현재는 mock URL)
+export const RESEARCH_SIGNUP_FORM_URL = 'https://forms.gle/234567890';
