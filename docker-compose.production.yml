@@ -1,0 +1,19 @@
+version: '3.8'
+services:
+  app:
+    container_name: react-app-prod
+    build:
+      context: .
+      target: production
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /etc/letsencrypt:/etc/letsencrypt:ro
+    networks:
+      - whoamitoday-network
+    restart: unless-stopped
+
+networks:
+  whoamitoday-network:
+    external: true
